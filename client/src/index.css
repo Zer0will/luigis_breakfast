@@ -1,3 +1,10 @@
+/*
+ * Luigi's American Breakfast — Global Theme
+ * Design direction: "Saturday Morning Plaza" — warm, photo-led, mobile-first
+ * neighborhood-cafe aesthetic. Cream cream paper backgrounds, brand peach + brick-red
+ * accents from the logo, Fraunces display + Inter body + Caveat for hand-written moments.
+ */
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -8,6 +15,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -40,86 +48,98 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Brand-specific tokens */
+  --color-cream: var(--cream);
+  --color-cream-deep: var(--cream-deep);
+  --color-peach: var(--peach);
+  --color-peach-soft: var(--peach-soft);
+  --color-tomato: var(--tomato);
+  --color-brick: var(--brick);
+  --color-forest: var(--forest);
+  --color-charcoal: var(--charcoal);
+  --color-ink: var(--ink);
+
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-hand: "Caveat", "Comic Sans MS", cursive;
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
-}
+  /* Brand palette */
+  --cream: oklch(0.972 0.024 75);          /* #FAF3E8 warm paper */
+  --cream-deep: oklch(0.94 0.038 75);      /* #F1E5CE deeper cream */
+  --peach: oklch(0.78 0.118 50);           /* #EFAA7A logo peach */
+  --peach-soft: oklch(0.88 0.064 55);      /* lighter peach wash */
+  --tomato: oklch(0.55 0.184 28);          /* #B83A2A deep tomato */
+  --brick: oklch(0.46 0.158 28);           /* #A02A1F logo red */
+  --forest: oklch(0.46 0.062 140);         /* #3F5A3A herb accent */
+  --charcoal: oklch(0.27 0.012 60);        /* #2D2622 warm charcoal */
+  --ink: oklch(0.22 0.014 60);             /* #1F1611 deep ink */
 
-.dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+  /* shadcn semantic tokens mapped to brand */
+  --radius: 0.75rem;
+  --background: var(--cream);
+  --foreground: var(--charcoal);
+  --card: oklch(0.985 0.012 75);
+  --card-foreground: var(--charcoal);
+  --popover: oklch(0.985 0.012 75);
+  --popover-foreground: var(--charcoal);
+  --primary: var(--brick);
+  --primary-foreground: oklch(0.985 0.012 75);
+  --secondary: var(--cream-deep);
+  --secondary-foreground: var(--charcoal);
+  --muted: oklch(0.93 0.018 75);
+  --muted-foreground: oklch(0.42 0.018 60);
+  --accent: var(--peach);
+  --accent-foreground: var(--ink);
+  --destructive: oklch(0.55 0.184 28);
+  --destructive-foreground: oklch(0.985 0.012 75);
+  --border: oklch(0.86 0.028 75);
+  --input: oklch(0.86 0.028 75);
+  --ring: var(--brick);
+  --chart-1: var(--peach);
+  --chart-2: var(--tomato);
+  --chart-3: var(--brick);
+  --chart-4: var(--forest);
+  --chart-5: var(--charcoal);
+  --sidebar: var(--cream);
+  --sidebar-foreground: var(--charcoal);
+  --sidebar-primary: var(--brick);
+  --sidebar-primary-foreground: var(--cream);
+  --sidebar-accent: var(--cream-deep);
+  --sidebar-accent-foreground: var(--charcoal);
+  --sidebar-border: oklch(0.86 0.028 75);
+  --sidebar-ring: var(--brick);
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
-  body {
-    @apply bg-background text-foreground;
+
+  html {
+    scroll-behavior: smooth;
   }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+    font-feature-settings: "ss01", "cv11";
+    background-color: var(--cream);
+    /* Subtle grainy paper texture */
+    background-image:
+      radial-gradient(circle at 20% 30%, oklch(0.92 0.04 60 / 0.4) 0px, transparent 60%),
+      radial-gradient(circle at 80% 70%, oklch(0.92 0.05 80 / 0.35) 0px, transparent 55%);
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
   [type="button"]:not(:disabled),
@@ -134,25 +154,12 @@
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
-    padding-right: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .flex {
@@ -162,16 +169,106 @@
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
-      padding-right: 1.5rem;
+      padding-left: 1.75rem;
+      padding-right: 1.75rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem; /* 32px - desktop padding */
+      padding-left: 2rem;
       padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      max-width: 1200px;
     }
   }
+
+  /* Brand utility classes */
+  .font-display { font-family: var(--font-display); }
+  .font-hand { font-family: var(--font-hand); }
+  .font-body { font-family: var(--font-body); }
+
+  .text-brick { color: var(--brick); }
+  .text-tomato { color: var(--tomato); }
+  .text-peach { color: var(--peach); }
+  .text-charcoal { color: var(--charcoal); }
+  .text-ink { color: var(--ink); }
+  .text-forest { color: var(--forest); }
+  .text-cream { color: var(--cream); }
+
+  .bg-cream { background-color: var(--cream); }
+  .bg-cream-deep { background-color: var(--cream-deep); }
+  .bg-peach { background-color: var(--peach); }
+  .bg-peach-soft { background-color: var(--peach-soft); }
+  .bg-tomato { background-color: var(--tomato); }
+  .bg-brick { background-color: var(--brick); }
+  .bg-charcoal { background-color: var(--charcoal); }
+  .bg-ink { background-color: var(--ink); }
+  .bg-forest { background-color: var(--forest); }
+
+  .border-brick { border-color: var(--brick); }
+  .border-peach { border-color: var(--peach); }
+  .border-cream-deep { border-color: var(--cream-deep); }
+
+  /* Sunrise gradient strip used between sections */
+  .sunrise-strip {
+    background: linear-gradient(
+      90deg,
+      var(--peach) 0%,
+      var(--peach-soft) 35%,
+      var(--cream-deep) 70%,
+      var(--peach) 100%
+    );
+    height: 6px;
+  }
+
+  /* Polaroid food card tilt */
+  .polaroid {
+    background: oklch(0.99 0.006 75);
+    padding: 0.75rem 0.75rem 1.25rem 0.75rem;
+    box-shadow:
+      0 1px 2px oklch(0.2 0.02 60 / 0.08),
+      0 8px 24px oklch(0.2 0.02 60 / 0.12);
+    transition: transform 280ms ease, box-shadow 280ms ease;
+  }
+  .polaroid:hover {
+    box-shadow:
+      0 2px 4px oklch(0.2 0.02 60 / 0.1),
+      0 14px 36px oklch(0.2 0.02 60 / 0.18);
+  }
+  .tilt-l { transform: rotate(-1.6deg); }
+  .tilt-r { transform: rotate(1.4deg); }
+  .tilt-l:hover, .tilt-r:hover { transform: rotate(0deg) translateY(-4px); }
+
+  /* Dot leaders for menu pricing */
+  .dotleader {
+    background-image: radial-gradient(circle, var(--muted-foreground) 1px, transparent 1.2px);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 8px 2px;
+  }
+
+  /* Soft steam wisp animation */
+  @keyframes wisp {
+    0%   { opacity: 0.0; transform: translateY(0) scaleX(1); }
+    30%  { opacity: 0.7; }
+    100% { opacity: 0.0; transform: translateY(-28px) scaleX(1.4); }
+  }
+  .wisp {
+    animation: wisp 3.4s ease-in-out infinite;
+    transform-origin: center bottom;
+  }
+  .wisp-2 { animation-delay: 1.1s; }
+  .wisp-3 { animation-delay: 2.0s; }
+
+  /* Subtle entry fade-up */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .fade-up {
+    animation: fadeUp 700ms ease-out both;
+  }
+  .fade-up-d1 { animation-delay: 120ms; }
+  .fade-up-d2 { animation-delay: 240ms; }
+  .fade-up-d3 { animation-delay: 360ms; }
 }
