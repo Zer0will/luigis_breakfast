@@ -13,8 +13,8 @@ export const brand = {
     full: "23515 NE Novelty Hill Rd, Redmond, WA 98053",
   },
   // NOTE: Phone is a placeholder — replace with actual number when known.
-  phone: "(425) 555-0182",
-  phoneHref: "tel:+14255550182",
+  phone: "(425) 616-5500",
+  phoneHref: "tel:+14256165500",
   hours: {
     short: "Open Daily 8 AM – 3 PM",
     long: "Monday – Sunday, 8:00 AM – 3:00 PM",
