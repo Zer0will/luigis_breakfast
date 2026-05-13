@@ -2,7 +2,7 @@
 
 import { MapPin, Phone, Clock, Car, Instagram } from "lucide-react";
 import SiteLayout from "@/components/SiteLayout";
-import { brand } from "@/data/brand";
+import { brand, getDirectionsUrl } from "@/data/brand";
 
 export default function Visit() {
   return (
@@ -32,7 +32,7 @@ export default function Visit() {
               />
             </div>
             <a
-              href={brand.directionsUrl}
+              href={getDirectionsUrl()}
               target="_blank"
               rel="noreferrer"
               className="mt-4 inline-flex items-center gap-2 bg-brick text-cream px-6 py-3.5 rounded-full text-[15px] font-semibold hover:bg-tomato transition-colors"

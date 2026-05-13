@@ -3,7 +3,7 @@
 import { Link } from "wouter";
 import { MapPin, Phone, ChevronRight, Heart, Wheat, Coffee } from "lucide-react";
 import SiteLayout from "@/components/SiteLayout";
-import { brand, images } from "@/data/brand";
+import { brand, images, getDirectionsUrl } from "@/data/brand";
 
 export default function About() {
   return (
@@ -110,7 +110,7 @@ export default function About() {
                   See the menu <ChevronRight className="w-4 h-4" />
                 </Link>
                 <a
-                  href={brand.directionsUrl}
+                  href={getDirectionsUrl()}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 bg-ink/90 text-cream px-6 py-3.5 rounded-full text-[15px] font-semibold"

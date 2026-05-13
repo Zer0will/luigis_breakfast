@@ -38,6 +38,16 @@ export const brand = {
     "https://www.google.com/maps?q=23515+NE+Novelty+Hill+Rd,+Redmond,+WA+98053&output=embed",
 };
 
+const appleDirectionsUrl =
+  "https://maps.apple.com/?daddr=23515+NE+Novelty+Hill+Rd,+Redmond,+WA+98053";
+
+export function getDirectionsUrl(): string {
+  if (typeof navigator === "undefined") return brand.directionsUrl;
+  return /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent)
+    ? appleDirectionsUrl
+    : brand.directionsUrl;
+}
+
 // Hero / food imagery (generated, persistent CDN URLs)
 export const images = {
   heroSpread:

@@ -8,7 +8,7 @@ import { Link } from "wouter";
 import { ChevronRight, Phone, MapPin, Sparkles } from "lucide-react";
 import SiteLayout from "@/components/SiteLayout";
 import { menu, allergenNote, type MenuSection, type MenuItem } from "@/data/menu";
-import { brand } from "@/data/brand";
+import { brand, getDirectionsUrl } from "@/data/brand";
 
 export default function MenuPage() {
   const [activeGroup, setActiveGroup] = useState(menu[0].id);
@@ -52,7 +52,7 @@ export default function MenuPage() {
               Call to order
             </a>
             <a
-              href={brand.directionsUrl}
+              href={getDirectionsUrl()}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 bg-cream-deep text-ink px-5 py-3 rounded-full text-[14px] font-semibold hover:bg-peach-soft transition-colors"
@@ -132,7 +132,7 @@ export default function MenuPage() {
           </div>
           <div className="flex flex-wrap gap-2">
             <a
-              href={brand.directionsUrl}
+              href={getDirectionsUrl()}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 bg-peach text-ink px-5 py-3 rounded-full text-[14px] font-semibold"

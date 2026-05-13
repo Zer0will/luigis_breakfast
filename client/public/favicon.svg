@@ -1,16 +1,5 @@
-// Logo — a recreation of Luigi's chef-hat "L" mark from the Instagram avatar.
-// Uses inline SVG so it scales, recolors, and ships fast (no extra HTTP).
-
-type LogoProps = {
-  className?: string;
-  size?: number;
-  withWordmark?: boolean;
-};
-
-export default function Logo({ className = "", size = 56, withWordmark = false }: LogoProps) {
-  return (
-    <div className={`flex items-center gap-3 ${className}`}>
-      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 1024.00 1024.00" width={size} height={size}>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 1024.00 1024.00" width="56" height="56">
 <g strokeWidth="2.00" fill="none" strokeLinecap="butt">
 <path stroke="#fefffb" vectorEffect="non-scaling-stroke" d="
   M 1024.00 584.47
@@ -5472,18 +5461,4 @@ export default function Logo({ className = "", size = 56, withWordmark = false }
   L 571.99 924.26
   Z"
 />
-</svg>  
-
-      {withWordmark && (
-        <div className="leading-tight">
-          <div className="font-display text-[18px] font-semibold text-ink">
-            Luigi's
-          </div>
-          <div className="font-display italic text-[13px] text-brick -mt-0.5">
-            American Breakfast
-          </div>
-        </div>
-      )}
-    </div>
-  );
-}
+</svg>

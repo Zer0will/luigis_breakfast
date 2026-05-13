@@ -3,7 +3,7 @@
 import { Link } from "wouter";
 import { Phone, MapPin, Clock, Instagram } from "lucide-react";
 import Logo from "./Logo";
-import { brand } from "@/data/brand";
+import { brand, getDirectionsUrl } from "@/data/brand";
 
 export default function SiteFooter() {
   return (
@@ -35,7 +35,7 @@ export default function SiteFooter() {
                 Find us
               </div>
               <a
-                href={brand.directionsUrl}
+                href={getDirectionsUrl()}
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-start gap-2 hover:text-peach transition-colors group"
@@ -103,7 +103,7 @@ export default function SiteFooter() {
             Call
           </a>
           <a
-            href={brand.directionsUrl}
+            href={getDirectionsUrl()}
             target="_blank"
             rel="noreferrer"
             className="flex-1 flex items-center justify-center gap-2 bg-peach text-ink py-3 rounded-full font-semibold text-[15px]"

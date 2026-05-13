@@ -5,7 +5,7 @@
 import { Link } from "wouter";
 import { Clock, MapPin, Phone, ChevronRight, Star, Utensils } from "lucide-react";
 import SiteLayout from "@/components/SiteLayout";
-import { brand, images, signatureDishes } from "@/data/brand";
+import { brand, images, signatureDishes, getDirectionsUrl } from "@/data/brand";
 
 export default function Home() {
   return (
@@ -39,7 +39,7 @@ export default function Home() {
                   See the menu
                 </Link>
                 <a
-                  href={brand.directionsUrl}
+                  href={getDirectionsUrl()}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 bg-cream-deep text-ink px-6 py-3.5 rounded-full text-[15px] font-semibold hover:bg-peach-soft transition-colors"
@@ -221,7 +221,7 @@ export default function Home() {
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <a
-                  href={brand.directionsUrl}
+                  href={getDirectionsUrl()}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 bg-peach text-ink px-6 py-3.5 rounded-full text-[15px] font-semibold hover:bg-cream transition-colors"
