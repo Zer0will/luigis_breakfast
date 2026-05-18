@@ -2,18 +2,27 @@
 
 import { MapPin, Phone, Clock, Car, Instagram } from "lucide-react";
 import SiteLayout from "@/components/SiteLayout";
+import SEO from "@/components/SEO";
 import { brand, getDirectionsUrl } from "@/data/brand";
 
 export default function Visit() {
   return (
     <SiteLayout>
+      <SEO
+        title="Hours & Location | Luigi's American Breakfast — Redmond, WA"
+        description="Visit Luigi's American Breakfast at 23515 NE Novelty Hill Rd, Redmond, WA 98053. Open daily 8 AM–3 PM. Free parking. Call (425) 616-5500."
+        path="/visit"
+        includeRestaurantSchema
+        breadcrumbs={[{ name: "Hours & Location", path: "/visit" }]}
+      />
       <section className="container pt-10 sm:pt-16 pb-10">
         <div className="font-hand text-2xl sm:text-3xl text-brick">Find us</div>
         <h1 className="mt-1 font-display text-[42px] sm:text-[56px] font-semibold text-ink leading-tight">
           Right off Novelty Hill Road.
         </h1>
         <p className="mt-4 text-charcoal/80 text-[17px] max-w-2xl leading-relaxed">
-          Tucked into the Redmond Ridge plaza with plenty of free parking. Walk in any morning between 8 and 3 — no reservations needed.
+          Tucked into the Redmond Ridge plaza with plenty of free parking. Walk
+          in any morning between 8 and 3 — no reservations needed.
         </p>
       </section>
 
@@ -45,14 +54,15 @@ export default function Visit() {
           <div className="lg:col-span-5 space-y-6">
             <Block icon={MapPin} title="Address">
               <p className="text-[16px] text-charcoal leading-relaxed">
-                {brand.address.line1}<br />
+                {brand.address.line1}
+                <br />
                 {brand.address.city}, {brand.address.state} {brand.address.zip}
               </p>
             </Block>
 
             <Block icon={Clock} title="Hours">
               <ul className="space-y-1 text-[15px]">
-                {brand.hours.days.map((d) => (
+                {brand.hours.days.map(d => (
                   <li key={d.day} className="flex justify-between">
                     <span className="text-charcoal/70">{d.day}</span>
                     <span className="text-ink font-medium">{d.hours}</span>
@@ -60,12 +70,16 @@ export default function Visit() {
                 ))}
               </ul>
               <p className="mt-3 text-[13px] text-charcoal/65 italic">
-                Lunch menu starts at noon on weekends; available anytime weekdays.
+                Lunch menu starts at noon on weekends; available anytime
+                weekdays.
               </p>
             </Block>
 
             <Block icon={Phone} title="Call ahead">
-              <a href={brand.phoneHref} className="text-[18px] font-semibold text-brick">
+              <a
+                href={brand.phoneHref}
+                className="text-[18px] font-semibold text-brick"
+              >
                 {brand.phone}
               </a>
               <p className="mt-1 text-[13px] text-charcoal/70">
@@ -75,7 +89,8 @@ export default function Visit() {
 
             <Block icon={Car} title="Parking">
               <p className="text-[15px] text-charcoal leading-relaxed">
-                Free parking out front and around the plaza. Stroller- and walker-friendly entrance.
+                Free parking out front and around the plaza. Stroller- and
+                walker-friendly entrance.
               </p>
             </Block>
 
@@ -114,7 +129,9 @@ function Block({
         <div className="w-9 h-9 rounded-full bg-peach-soft text-brick flex items-center justify-center">
           <Icon className="w-4 h-4" />
         </div>
-        <h2 className="font-display text-[20px] font-semibold text-ink">{title}</h2>
+        <h2 className="font-display text-[20px] font-semibold text-ink">
+          {title}
+        </h2>
       </div>
       {children}
     </div>

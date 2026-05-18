@@ -3,13 +3,27 @@
 // and feel a warm pull to come in this weekend.
 
 import { Link } from "wouter";
-import { Clock, MapPin, Phone, ChevronRight, Star, Utensils } from "lucide-react";
+import {
+  Clock,
+  MapPin,
+  Phone,
+  ChevronRight,
+  Star,
+  Utensils,
+} from "lucide-react";
 import SiteLayout from "@/components/SiteLayout";
+import SEO from "@/components/SEO";
 import { brand, images, signatureDishes, getDirectionsUrl } from "@/data/brand";
 
 export default function Home() {
   return (
     <SiteLayout>
+      <SEO
+        title="Luigi's American Breakfast | Redmond, WA"
+        description="Family-run American breakfast & lunch in Redmond Ridge, WA. Swedish pancakes, Italian sausage scrambles, eggs benedict. Open daily 8 AM–3 PM. Walk-ins welcome."
+        path="/"
+        includeRestaurantSchema
+      />
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="container pt-8 sm:pt-14 pb-16 sm:pb-24">
@@ -22,12 +36,15 @@ export default function Home() {
 
               <h1 className="mt-5 font-display text-[44px] sm:text-[64px] lg:text-[72px] leading-[1.02] text-ink font-semibold">
                 A neighborhood{" "}
-                <span className="italic text-brick">breakfast</span>{" "}
-                worth getting up for.
+                <span className="italic text-brick">breakfast</span> worth
+                getting up for.
               </h1>
 
               <p className="mt-5 text-[17px] sm:text-[19px] text-charcoal/80 leading-relaxed max-w-xl">
-                Luigi's is a family-run American breakfast and lunch spot serving Swedish pancakes, hand-mixed scrambles, and steak-and-eggs the way a Saturday morning should taste. Stop by — we'll have the coffee on.
+                Luigi's is a family-run American breakfast and lunch spot
+                serving Swedish pancakes, hand-mixed scrambles, and
+                steak-and-eggs the way a Saturday morning should taste. Stop by
+                — we'll have the coffee on.
               </p>
 
               <div className="mt-7 flex flex-wrap gap-3">
@@ -60,7 +77,10 @@ export default function Home() {
                   <span className="font-semibold text-ink">Redmond Ridge</span>
                   <span className="text-charcoal/70">Novelty Hill Rd</span>
                 </div>
-                <a href={brand.phoneHref} className="flex items-center gap-2 text-charcoal hover:text-brick">
+                <a
+                  href={brand.phoneHref}
+                  className="flex items-center gap-2 text-charcoal hover:text-brick"
+                >
                   <Phone className="w-4 h-4 text-brick" />
                   <span className="font-semibold text-ink">{brand.phone}</span>
                 </a>
@@ -87,8 +107,12 @@ export default function Home() {
                     <span className="text-2xl">☕</span>
                   </div>
                   <div className="leading-tight">
-                    <div className="font-hand text-xl text-brick -mb-0.5">Coffee's on</div>
-                    <div className="text-[12px] text-charcoal/60">Bottomless refills</div>
+                    <div className="font-hand text-xl text-brick -mb-0.5">
+                      Coffee's on
+                    </div>
+                    <div className="text-[12px] text-charcoal/60">
+                      Bottomless refills
+                    </div>
                   </div>
                 </div>
 
@@ -105,10 +129,26 @@ export default function Home() {
       {/* TRUST STRIP */}
       <section className="bg-cream-deep/60 border-y border-cream-deep">
         <div className="container py-6 sm:py-8 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center sm:text-left">
-          <Stat icon={Clock} title="All-day breakfast" sub="Served 8 to 3, every day" />
-          <Stat icon={Utensils} title="Made in-house" sub="Swedish pancake batter, sausage gravy, corned beef hash" />
-          <Stat icon={Star} title="Family-run" sub="The Luigi family welcomes you" />
-          <Stat icon={MapPin} title="Easy parking" sub="Right off Novelty Hill Rd" />
+          <Stat
+            icon={Clock}
+            title="All-day breakfast"
+            sub="Served 8 to 3, every day"
+          />
+          <Stat
+            icon={Utensils}
+            title="Made in-house"
+            sub="Swedish pancake batter, sausage gravy, corned beef hash"
+          />
+          <Stat
+            icon={Star}
+            title="Family-run"
+            sub="The Luigi family welcomes you"
+          />
+          <Stat
+            icon={MapPin}
+            title="Easy parking"
+            sub="Right off Novelty Hill Rd"
+          />
         </div>
       </section>
 
@@ -116,7 +156,9 @@ export default function Home() {
       <section className="container py-16 sm:py-24">
         <div className="flex items-end justify-between flex-wrap gap-4 mb-10">
           <div>
-            <div className="font-hand text-3xl text-brick">What people order</div>
+            <div className="font-hand text-3xl text-brick">
+              What people order
+            </div>
             <h2 className="font-display text-[34px] sm:text-[44px] font-semibold text-ink leading-tight max-w-2xl">
               Three things you should try first.
             </h2>
@@ -175,8 +217,12 @@ export default function Home() {
                   className="w-full h-[360px] sm:h-[440px] object-cover rounded-[20px] shadow-xl"
                 />
                 <div className="absolute -bottom-5 -right-5 bg-peach text-ink rounded-2xl px-5 py-3 shadow-lg max-w-[200px]">
-                  <div className="font-hand text-xl leading-tight">"The breakfast burrito SLAPS."</div>
-                  <div className="text-[11px] uppercase tracking-[0.14em] mt-1 opacity-70">— A Redmond regular</div>
+                  <div className="font-hand text-xl leading-tight">
+                    "The breakfast burrito SLAPS."
+                  </div>
+                  <div className="text-[11px] uppercase tracking-[0.14em] mt-1 opacity-70">
+                    — A Redmond regular
+                  </div>
                 </div>
               </div>
             </div>
@@ -187,10 +233,17 @@ export default function Home() {
                 Italian roots. American breakfast.
               </h2>
               <p className="mt-5 text-[17px] text-charcoal/80 leading-relaxed">
-                Luigi's is a family operation, and the menu reads like a family table: Swedish pancakes from a treasured recipe, Italian sausage scrambled with spinach and parmesan, fresh corned beef hash made in-house every week, and steak from our own butcher shop. We opened in Redmond Ridge to be the place you bring your parents on Saturday and your kids on Sunday.
+                Luigi's is a family operation, and the menu reads like a family
+                table: Swedish pancakes from a treasured recipe, Italian sausage
+                scrambled with spinach and parmesan, fresh corned beef hash made
+                in-house every week, and steak from our own butcher shop. We
+                opened in Redmond Ridge to be the place you bring your parents
+                on Saturday and your kids on Sunday.
               </p>
               <p className="mt-4 text-[17px] text-charcoal/80 leading-relaxed">
-                We're still new here. If something's not right, tell us — we'll fix it on the spot, and probably hand you a cinnamon roll on your way out.
+                We're still new here. If something's not right, tell us — we'll
+                fix it on the spot, and probably hand you a cinnamon roll on
+                your way out.
               </p>
               <Link
                 href="/about"
@@ -206,10 +259,13 @@ export default function Home() {
       {/* VISIT CARD */}
       <section className="container py-16 sm:py-24">
         <div className="rounded-[24px] bg-ink text-cream overflow-hidden relative">
-          <div className="absolute inset-0 opacity-[0.06]" style={{
-            backgroundImage:
-              "radial-gradient(circle at 15% 20%, var(--peach) 0%, transparent 40%), radial-gradient(circle at 85% 80%, var(--brick) 0%, transparent 45%)",
-          }} />
+          <div
+            className="absolute inset-0 opacity-[0.06]"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle at 15% 20%, var(--peach) 0%, transparent 40%), radial-gradient(circle at 85% 80%, var(--brick) 0%, transparent 45%)",
+            }}
+          />
           <div className="relative grid md:grid-cols-2 gap-8 p-8 sm:p-14">
             <div>
               <div className="font-hand text-3xl text-peach">Come see us</div>
@@ -217,7 +273,8 @@ export default function Home() {
                 Open daily, 8 to 3.
               </h2>
               <p className="mt-4 text-cream/70 text-[16px] leading-relaxed max-w-md">
-                Walk-ins welcome. Plenty of parking. Big enough for the whole family, small enough that we'll learn your usual.
+                Walk-ins welcome. Plenty of parking. Big enough for the whole
+                family, small enough that we'll learn your usual.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <a
@@ -243,7 +300,7 @@ export default function Home() {
                 Hours
               </div>
               <ul className="space-y-1.5 mb-6">
-                {brand.hours.days.map((d) => (
+                {brand.hours.days.map(d => (
                   <li key={d.day} className="flex justify-between max-w-sm">
                     <span className="text-cream/65">{d.day}</span>
                     <span className="text-cream">{d.hours}</span>
@@ -281,7 +338,9 @@ function Stat({
         <Icon className="w-4 h-4 text-brick" />
       </div>
       <div className="text-left">
-        <div className="font-semibold text-ink text-[15px] leading-tight">{title}</div>
+        <div className="font-semibold text-ink text-[15px] leading-tight">
+          {title}
+        </div>
         <div className="text-charcoal/65 text-[13px] mt-0.5">{sub}</div>
       </div>
     </div>

@@ -7,21 +7,25 @@ import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import { ChevronRight, Phone, MapPin, Sparkles } from "lucide-react";
 import SiteLayout from "@/components/SiteLayout";
-import { menu, allergenNote, type MenuSection, type MenuItem } from "@/data/menu";
+import SEO from "@/components/SEO";
+import {
+  menu,
+  allergenNote,
+  type MenuSection,
+  type MenuItem,
+} from "@/data/menu";
 import { brand, getDirectionsUrl } from "@/data/brand";
 
 export default function MenuPage() {
   const [activeGroup, setActiveGroup] = useState(menu[0].id);
-  const group = menu.find((g) => g.id === activeGroup) ?? menu[0];
+  const group = menu.find(g => g.id === activeGroup) ?? menu[0];
 
   // Honor hash on first mount or when navigating
   useEffect(() => {
     if (typeof window === "undefined") return;
     const hash = window.location.hash.replace("#", "");
     if (!hash) return;
-    const found = menu.find((g) =>
-      g.sections.some((s) => s.id === hash)
-    );
+    const found = menu.find(g => g.sections.some(s => s.id === hash));
     if (found) {
       setActiveGroup(found.id);
       setTimeout(() => {
@@ -33,15 +37,25 @@ export default function MenuPage() {
 
   return (
     <SiteLayout>
+      <SEO
+        title="Menu | Luigi's American Breakfast — Redmond, WA"
+        description="Browse the full menu at Luigi's American Breakfast in Redmond Ridge, WA. Swedish pancakes, breakfast burritos, scrambles, steak and eggs, and more. Open daily 8 AM–3 PM."
+        path="/menu"
+        breadcrumbs={[{ name: "Menu", path: "/menu" }]}
+      />
       {/* HEADER */}
       <section className="border-b border-cream-deep">
         <div className="container pt-10 sm:pt-16 pb-8 sm:pb-12">
-          <div className="font-hand text-2xl sm:text-3xl text-brick">The menu</div>
+          <div className="font-hand text-2xl sm:text-3xl text-brick">
+            The menu
+          </div>
           <h1 className="mt-1 font-display text-[42px] sm:text-[56px] font-semibold text-ink leading-tight">
             Everything we cook, in one place.
           </h1>
           <p className="mt-4 text-charcoal/75 text-[16px] sm:text-[17px] max-w-2xl leading-relaxed">
-            Breakfast is served all day. Lunch starts at noon on weekends, anytime on weekdays. Tap a section, scan, and call ahead if you'd like — we'll have it on the table.
+            Breakfast is served all day. Lunch starts at noon on weekends,
+            anytime on weekdays. Tap a section, scan, and call ahead if you'd
+            like — we'll have it on the table.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <a
@@ -68,7 +82,7 @@ export default function MenuPage() {
       <div className="sticky top-16 sm:top-20 z-30 bg-cream/95 backdrop-blur-md border-b border-cream-deep">
         <div className="container">
           <div className="flex gap-1 overflow-x-auto py-3 -mx-1 px-1 scrollbar-hide">
-            {menu.map((g) => {
+            {menu.map(g => {
               const active = g.id === activeGroup;
               return (
                 <button
@@ -95,7 +109,7 @@ export default function MenuPage() {
       {/* SECTION NAV PILLS */}
       <section className="container pt-8">
         <div className="flex flex-wrap gap-2">
-          {group.sections.map((s) => (
+          {group.sections.map(s => (
             <a
               key={s.id}
               href={`#${s.id}`}
@@ -111,14 +125,16 @@ export default function MenuPage() {
       {/* SECTIONS */}
       <section className="container pb-20 pt-4">
         <div className="space-y-14 sm:space-y-20">
-          {group.sections.map((section) => (
+          {group.sections.map(section => (
             <Section key={section.id} section={section} />
           ))}
         </div>
 
         {/* Allergen note */}
         <div className="mt-16 p-5 sm:p-6 rounded-2xl bg-cream-deep/50 border border-cream-deep text-[13px] text-charcoal/75 leading-relaxed">
-          <div className="font-semibold text-ink mb-1 text-[14px]">A note from the kitchen</div>
+          <div className="font-semibold text-ink mb-1 text-[14px]">
+            A note from the kitchen
+          </div>
           {allergenNote}
         </div>
 
@@ -184,10 +200,12 @@ function Section({ section }: { section: MenuSection }) {
               </div>
             )}
             {sub.note && (
-              <p className="text-[13px] text-charcoal/60 italic mb-3">{sub.note}</p>
+              <p className="text-[13px] text-charcoal/60 italic mb-3">
+                {sub.note}
+              </p>
             )}
             <ul className="grid sm:grid-cols-2 gap-x-10 gap-y-5">
-              {sub.items.map((item) => (
+              {sub.items.map(item => (
                 <MenuItemRow key={item.name} item={item} />
               ))}
             </ul>
