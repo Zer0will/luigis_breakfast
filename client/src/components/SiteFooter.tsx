@@ -16,7 +16,9 @@ export default function SiteFooter() {
               <div className="flex items-center gap-3 mb-4">
                 <Logo size={56} />
                 <div>
-                  <div className="font-display text-2xl text-cream">Luigi's</div>
+                  <div className="font-display text-2xl text-cream">
+                    Luigi's
+                  </div>
                   <div className="font-display italic text-[13px] text-peach -mt-1">
                     American Breakfast
                   </div>
@@ -26,7 +28,9 @@ export default function SiteFooter() {
                 Good food. Good coffee. A whole lot of butter.
               </p>
               <p className="mt-4 text-[15px] text-cream/70 max-w-md leading-relaxed">
-                A family-run breakfast & lunch spot tucked into the Redmond Ridge plaza. Stop in for Swedish pancakes, an Italian sausage scramble, or a steak and eggs. Save room for a cinnamon roll.
+                A family-run breakfast & lunch spot tucked into the Redmond
+                Ridge plaza. Stop in for Swedish pancakes, an Italian sausage
+                scramble, or a steak and eggs. Save room for a cinnamon roll.
               </p>
             </div>
 
@@ -44,7 +48,8 @@ export default function SiteFooter() {
                 <span className="text-[15px] leading-relaxed">
                   {brand.address.line1}
                   <br />
-                  {brand.address.city}, {brand.address.state} {brand.address.zip}
+                  {brand.address.city}, {brand.address.state}{" "}
+                  {brand.address.zip}
                 </span>
               </a>
               <a
@@ -71,8 +76,11 @@ export default function SiteFooter() {
                 Hours
               </div>
               <ul className="space-y-1.5 text-[15px]">
-                {brand.hours.days.map((d) => (
-                  <li key={d.day} className="flex justify-between gap-3 max-w-xs">
+                {brand.hours.days.map(d => (
+                  <li
+                    key={d.day}
+                    className="flex justify-between gap-3 max-w-xs"
+                  >
                     <span className="text-cream/70">{d.day}</span>
                     <span className="text-cream">{d.hours}</span>
                   </li>
@@ -82,11 +90,26 @@ export default function SiteFooter() {
           </div>
 
           <div className="mt-12 pt-6 border-t border-cream/15 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between text-[13px] text-cream/55">
-            <div>© {new Date().getFullYear()} Luigi's American Breakfast. Made with butter in Redmond, WA.</div>
-            <div className="flex gap-4">
-              <Link href="/menu" className="hover:text-peach">Menu</Link>
-              <Link href="/about" className="hover:text-peach">Our Family</Link>
-              <Link href="/visit" className="hover:text-peach">Visit</Link>
+            <div>
+              © {new Date().getFullYear()} Luigi's American Breakfast. Made with
+              butter in Redmond, WA.
+            </div>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/menu" className="hover:text-peach">
+                Menu
+              </Link>
+              <Link href="/about" className="hover:text-peach">
+                Our Family
+              </Link>
+              <Link href="/visit" className="hover:text-peach">
+                Visit
+              </Link>
+              <Link href="/privacy" className="hover:text-peach">
+                Privacy
+              </Link>
+              <Link href="/terms" className="hover:text-peach">
+                Terms
+              </Link>
             </div>
           </div>
         </div>
