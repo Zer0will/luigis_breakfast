@@ -19,8 +19,8 @@ export default function Home() {
   return (
     <SiteLayout>
       <SEO
-        title="Luigi's American Breakfast | Redmond, WA"
-        description="Family-run American breakfast & lunch in Redmond Ridge, WA. Swedish pancakes, Italian sausage scrambles, eggs benedict. Open daily 8 AM–3 PM. Walk-ins welcome."
+        title="Breakfast Restaurant in Redmond, WA | Luigi's"
+        description="Family-run breakfast restaurant in Redmond Ridge, WA. House-made Swedish pancakes, Italian scrambles & eggs benedict. Walk in daily, 8 AM–3 PM."
         path="/"
         includeRestaurantSchema
       />
@@ -35,16 +35,16 @@ export default function Home() {
               </div>
 
               <h1 className="mt-5 font-display text-[44px] sm:text-[64px] lg:text-[72px] leading-[1.02] text-ink font-semibold">
-                A neighborhood{" "}
-                <span className="italic text-brick">breakfast</span> worth
-                getting up for.
+                <span className="italic text-brick">Breakfast</span> in Redmond
+                Ridge worth getting up for.
               </h1>
 
               <p className="mt-5 text-[17px] sm:text-[19px] text-charcoal/80 leading-relaxed max-w-xl">
-                Luigi's is a family-run American breakfast and lunch spot
-                serving Swedish pancakes, hand-mixed scrambles, and
-                steak-and-eggs the way a Saturday morning should taste. Stop by
-                — we'll have the coffee on.
+                Luigi's is a family-run breakfast restaurant in Redmond Ridge,
+                WA — serving scratch-made Swedish pancakes, Italian sausage
+                scrambles, eggs benedict, and steak-and-eggs the way a Saturday
+                morning should taste. Walk in any day between 8 and 3, and
+                we'll have the coffee on.
               </p>
 
               <div className="mt-7 flex flex-wrap gap-3">
@@ -94,7 +94,7 @@ export default function Home() {
                 <div className="absolute -inset-2 bg-cream-deep rounded-[24px] rotate-1 -z-10" />
                 <img
                   src={images.heroSpread}
-                  alt="A spread of pancakes, omelette, hash browns, and biscuits and gravy on a wooden table"
+                  alt="Breakfast spread at Luigi's in Redmond Ridge, WA — pancakes, omelette, hash browns, and biscuits and gravy"
                   className="w-full h-[360px] sm:h-[460px] lg:h-[520px] object-cover rounded-[20px] shadow-xl"
                 />
 
@@ -160,7 +160,7 @@ export default function Home() {
               What people order
             </div>
             <h2 className="font-display text-[34px] sm:text-[44px] font-semibold text-ink leading-tight max-w-2xl">
-              Three things you should try first.
+              What Redmond Regulars Order First
             </h2>
           </div>
           <Link
@@ -182,7 +182,7 @@ export default function Home() {
               <div className="relative overflow-hidden rounded-[3px]">
                 <img
                   src={dish.image}
-                  alt={dish.name}
+                  alt={dish.altText}
                   className="w-full h-[260px] sm:h-[280px] object-cover"
                 />
                 <span className="absolute top-3 left-3 bg-brick text-cream text-[11px] uppercase tracking-[0.12em] font-semibold px-2.5 py-1 rounded-full">
@@ -213,7 +213,7 @@ export default function Home() {
               <div className="relative">
                 <img
                   src={images.benedict}
-                  alt="Eggs benedict with hollandaise and breakfast potatoes"
+                  alt="Eggs benedict with hollandaise sauce at Luigi's family breakfast restaurant in Redmond Ridge, WA"
                   className="w-full h-[360px] sm:h-[440px] object-cover rounded-[20px] shadow-xl"
                 />
                 <div className="absolute -bottom-5 -right-5 bg-peach text-ink rounded-2xl px-5 py-3 shadow-lg max-w-[200px]">
@@ -230,15 +230,16 @@ export default function Home() {
             <div className="lg:col-span-7 order-1 lg:order-2">
               <div className="font-hand text-3xl text-brick">Our story</div>
               <h2 className="mt-1 font-display text-[34px] sm:text-[46px] font-semibold text-ink leading-tight">
-                Italian roots. American breakfast.
+                A Family Breakfast Restaurant With Italian Roots
               </h2>
               <p className="mt-5 text-[17px] text-charcoal/80 leading-relaxed">
-                Luigi's is a family operation, and the menu reads like a family
-                table: Swedish pancakes from a treasured recipe, Italian sausage
-                scrambled with spinach and parmesan, fresh corned beef hash made
-                in-house every week, and steak from our own butcher shop. We
-                opened in Redmond Ridge to be the place you bring your parents
-                on Saturday and your kids on Sunday.
+                Luigi's is a family-friendly breakfast operation in Redmond
+                Ridge, and the menu reads like a family table: Swedish pancakes
+                from a treasured recipe, Italian sausage scrambled with spinach
+                and parmesan, fresh corned beef hash made in-house every week,
+                and steak from our own butcher shop. We opened here to be the
+                place you bring your parents on Saturday and your kids on
+                Sunday.
               </p>
               <p className="mt-4 text-[17px] text-charcoal/80 leading-relaxed">
                 We're still new here. If something's not right, tell us — we'll
@@ -270,11 +271,12 @@ export default function Home() {
             <div>
               <div className="font-hand text-3xl text-peach">Come see us</div>
               <h2 className="mt-1 font-display text-[34px] sm:text-[44px] font-semibold text-cream leading-tight">
-                Open daily, 8 to 3.
+                Find Us in Redmond Ridge — Open Daily, 8 AM to 3 PM
               </h2>
               <p className="mt-4 text-cream/70 text-[16px] leading-relaxed max-w-md">
-                Walk-ins welcome. Plenty of parking. Big enough for the whole
-                family, small enough that we'll learn your usual.
+                Walk-ins welcome. Plenty of parking. Come for breakfast or
+                weekend brunch — big enough for the whole family, small enough
+                that we'll learn your usual.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <a

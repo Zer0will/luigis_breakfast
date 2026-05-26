@@ -17,9 +17,10 @@ export default function About() {
   return (
     <SiteLayout>
       <SEO
-        title="Our Story | Luigi's American Breakfast — Redmond, WA"
-        description="Meet the family behind Luigi's. A small, family-run breakfast kitchen in Redmond Ridge, WA, serving house-made favorites with Italian roots. Open daily 8 AM–3 PM."
+        title="Our Family Story | Luigi's Breakfast Restaurant — Redmond, WA"
+        description="The family behind Luigi's American Breakfast in Redmond Ridge, WA. House-made favorites with Italian roots. Open daily 8 AM–3 PM — walk in any morning."
         path="/about"
+        includeRestaurantSchema
         breadcrumbs={[{ name: "Our Story", path: "/about" }]}
       />
       {/* HEADER */}
@@ -32,10 +33,16 @@ export default function About() {
             <h1 className="mt-1 font-display text-[42px] sm:text-[60px] font-semibold text-ink leading-[1.04]">
               We came to{" "}
               <span className="italic text-brick">Redmond Ridge</span> with a
-              family recipe and a coffee pot.
+              family breakfast recipe.
             </h1>
             <p className="mt-6 text-[17px] sm:text-[18px] text-charcoal/85 leading-relaxed max-w-2xl">
-              Luigi's American Breakfast is a small, family-run kitchen. The
+              <Link
+                href="/"
+                className="font-semibold text-brick hover:text-tomato transition-colors"
+              >
+                Luigi's American Breakfast
+              </Link>{" "}
+              is a small, family-run breakfast restaurant in Redmond Ridge. The
               Italian sausage scramble comes from a grandmother who didn't
               measure anything. The Swedish pancakes come from a friend's recipe
               we promised we'd never change. Everything else comes from showing
@@ -47,7 +54,7 @@ export default function About() {
             <div className="polaroid tilt-r rounded-md">
               <img
                 src={images.benedict}
-                alt="Eggs benedict with hollandaise sauce"
+                alt="Eggs benedict with hollandaise sauce at Luigi's American Breakfast in Redmond Ridge, WA"
                 className="w-full h-[280px] sm:h-[360px] object-cover rounded-[3px]"
               />
               <div className="pt-3 px-1">
@@ -69,19 +76,28 @@ export default function About() {
           <div className="grid md:grid-cols-3 gap-8 sm:gap-12">
             <Pillar
               icon={Wheat}
-              title="Made in-house"
+              title="Everything Made In-House"
               body="Swedish pancake batter, country sausage gravy, corned beef hash, and chorizo — mixed and prepped in our kitchen, not shipped in a bag."
             />
             <Pillar
               icon={Heart}
-              title="Family-run"
+              title="Family-Run, Not a Chain"
               body="You'll see the same faces when you come back. We learn names, we remember orders, and we'll sneak the kids an extra strawberry."
             />
             <Pillar
               icon={Coffee}
-              title="Bottomless coffee"
+              title="Bottomless Coffee, Every Morning"
               body="If your cup is empty, that's on us. Stay as long as you'd like — the booths weren't built to rush anyone."
             />
+          </div>
+          <div className="mt-10 text-center">
+            <Link
+              href="/menu"
+              className="inline-flex items-center gap-1 text-brick font-semibold text-[15px] hover:gap-2 transition-all"
+            >
+              See everything we make in-house{" "}
+              <ChevronRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>
@@ -92,14 +108,14 @@ export default function About() {
           <div className="lg:col-span-6">
             <img
               src={images.frenchToast}
-              alt="French toast with fresh strawberries and Devonshire cream"
+              alt="French toast with fresh strawberries and Devonshire cream at Luigi's in Redmond, WA"
               className="w-full h-[360px] sm:h-[460px] object-cover rounded-[20px] shadow-xl"
             />
           </div>
           <div className="lg:col-span-6">
             <div className="font-hand text-3xl text-brick">A small promise</div>
             <h2 className="mt-1 font-display text-[34px] sm:text-[44px] font-semibold text-ink leading-tight">
-              We're new here. We're listening.
+              Our Promise to the Redmond Ridge Neighborhood
             </h2>
             <p className="mt-5 text-[17px] text-charcoal/85 leading-relaxed">
               Luigi's just opened in Redmond Ridge. That means we're still
@@ -205,9 +221,7 @@ function Pillar({
       <h3 className="mt-4 font-display text-[24px] font-semibold text-ink leading-tight">
         {title}
       </h3>
-      <p className="mt-2 text-[15px] text-charcoal/80 leading-relaxed">
-        {body}
-      </p>
+      <p className="mt-2 text-[15px] text-charcoal/80 leading-relaxed">{body}</p>
     </div>
   );
 }

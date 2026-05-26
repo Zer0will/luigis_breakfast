@@ -1,6 +1,7 @@
 // Visit — practical info: address, map, hours, parking, phone.
 
-import { MapPin, Phone, Clock, Car, Instagram } from "lucide-react";
+import { Link } from "wouter";
+import { MapPin, Phone, Clock, Car, Instagram, ChevronRight } from "lucide-react";
 import SiteLayout from "@/components/SiteLayout";
 import SEO from "@/components/SEO";
 import { brand, getDirectionsUrl } from "@/data/brand";
@@ -26,7 +27,7 @@ export default function Visit() {
         </p>
       </section>
 
-      <section className="container pb-20">
+      <section className="container pb-16">
         <div className="grid lg:grid-cols-12 gap-10">
           <div className="lg:col-span-7">
             <div className="rounded-[20px] overflow-hidden shadow-xl border border-cream-deep aspect-[4/3] sm:aspect-[16/10] bg-cream-deep">
@@ -108,6 +109,22 @@ export default function Visit() {
               </p>
             </Block>
           </div>
+        </div>
+      </section>
+
+      {/* Internal link to About */}
+      <section className="container pb-20">
+        <div className="pt-6 border-t border-cream-deep text-center">
+          <p className="text-[15px] text-charcoal/70">
+            Want to know who's cooking?{" "}
+            <Link
+              href="/about"
+              className="inline-flex items-center gap-1 text-brick font-semibold hover:text-tomato transition-colors"
+            >
+              Meet the family behind the kitchen{" "}
+              <ChevronRight className="w-4 h-4" />
+            </Link>
+          </p>
         </div>
       </section>
     </SiteLayout>

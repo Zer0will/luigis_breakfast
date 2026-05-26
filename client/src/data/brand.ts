@@ -64,6 +64,8 @@ export const images = {
 export const signatureDishes = [
   {
     name: "Swedish Pancakes",
+    altText:
+      "Swedish pancakes with fresh Devonshire cream and jam — house specialty at Luigi's American Breakfast, Redmond WA",
     blurb:
       "Our house specialty. A treasured family recipe with fresh Devonshire cream & jam.",
     image: images.frenchToast,
@@ -73,6 +75,8 @@ export const signatureDishes = [
   },
   {
     name: "Breakfast Burrito",
+    altText:
+      "Carne asada breakfast burrito with scrambled eggs, peppers, and red potatoes at Luigi's Redmond",
     blurb:
       "Carne asada or homemade chorizo, scrambled eggs, peppers, and red potatoes in a griddled flour tortilla.",
     image: images.burrito,
@@ -82,6 +86,8 @@ export const signatureDishes = [
   },
   {
     name: "Italian Lover's Scramble",
+    altText:
+      "Italian sausage scramble with spinach, mushrooms, and parmesan at Luigi's American Breakfast, Redmond WA",
     blurb:
       "Sweet Italian sausage, spinach, onions, mushrooms & parmesan. The Luigi family lineage on a plate.",
     image: images.heroSpread,

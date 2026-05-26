@@ -50,6 +50,7 @@ const restaurantSchema = {
   hasMap:
     "https://www.google.com/maps?q=23515+NE+Novelty+Hill+Rd,+Redmond,+WA+98053",
   parking: "Free parking available",
+  menu: "https://luigisrestaurant.online/menu",
   acceptsReservations: false,
 };
 
@@ -109,7 +110,7 @@ export default function SEO({
       <meta property="og:image:alt" content={OG_IMAGE_ALT} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:type" content="restaurant" />
+      <meta property="og:type" content="website" />
       <meta property="og:site_name" content={SITE_NAME} />
       <meta property="og:locale" content="en_US" />
 

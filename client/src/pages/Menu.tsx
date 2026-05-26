@@ -38,8 +38,8 @@ export default function MenuPage() {
   return (
     <SiteLayout>
       <SEO
-        title="Menu | Luigi's American Breakfast — Redmond, WA"
-        description="Browse the full menu at Luigi's American Breakfast in Redmond Ridge, WA. Swedish pancakes, breakfast burritos, scrambles, steak and eggs, and more. Open daily 8 AM–3 PM."
+        title="Breakfast Menu | Luigi's — Redmond Ridge, WA"
+        description="Full breakfast menu at Luigi's in Redmond Ridge, WA — pancakes, scrambles, eggs benedict, burritos & more. Open daily 8 AM–3 PM."
         path="/menu"
         breadcrumbs={[{ name: "Menu", path: "/menu" }]}
       />
@@ -50,7 +50,7 @@ export default function MenuPage() {
             The menu
           </div>
           <h1 className="mt-1 font-display text-[42px] sm:text-[56px] font-semibold text-ink leading-tight">
-            Everything we cook, in one place.
+            Everything We Make — Breakfast &amp; Lunch in Redmond Ridge
           </h1>
           <p className="mt-4 text-charcoal/75 text-[16px] sm:text-[17px] max-w-2xl leading-relaxed">
             Breakfast is served all day. Lunch starts at noon on weekends,
@@ -65,15 +65,13 @@ export default function MenuPage() {
               <Phone className="w-4 h-4" />
               Call to order
             </a>
-            <a
-              href={getDirectionsUrl()}
-              target="_blank"
-              rel="noreferrer"
+            <Link
+              href="/visit"
               className="inline-flex items-center gap-2 bg-cream-deep text-ink px-5 py-3 rounded-full text-[14px] font-semibold hover:bg-peach-soft transition-colors"
             >
               <MapPin className="w-4 h-4" />
-              Visit us
-            </a>
+              Find us in Redmond Ridge
+            </Link>
           </div>
         </div>
       </section>
@@ -143,7 +141,11 @@ export default function MenuPage() {
           <div>
             <div className="font-hand text-2xl text-peach">Hungry yet?</div>
             <div className="font-display text-[24px] sm:text-[28px] font-semibold leading-tight mt-1">
-              Come see us at Redmond Ridge.
+              Come see us at{" "}
+              <Link href="/" className="underline underline-offset-2 hover:text-peach transition-colors">
+                Luigi's American Breakfast in Redmond
+              </Link>
+              .
             </div>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -161,6 +163,12 @@ export default function MenuPage() {
               className="inline-flex items-center gap-1 text-cream/85 px-3 py-3 hover:text-peach text-[14px]"
             >
               Our story <ChevronRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/visit"
+              className="inline-flex items-center gap-1 text-cream/85 px-3 py-3 hover:text-peach text-[14px]"
+            >
+              Hours &amp; location <ChevronRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
