@@ -11,7 +11,7 @@ const restaurantSchema = {
   "@type": ["Restaurant", "LocalBusiness"],
   name: "Luigi's American Breakfast",
   description:
-    "Family-run American breakfast and lunch spot in Redmond Ridge, WA. Swedish pancakes, Italian sausage scrambles, eggs benedict, and more. Open daily 8 AM–3 PM.",
+    "Family-run American breakfast and lunch spot in Redmond Ridge, WA. Swedish pancakes, eggs benedict, breakfast burritos, burgers, sandwiches, and more. Open daily 8 AM–3 PM.",
   url: SITE_URL,
   telephone: "+14256165500",
   image: OG_IMAGE,

@@ -85,14 +85,14 @@ export const signatureDishes = [
     badge: "Neighborhood favorite",
   },
   {
-    name: "Italian Lover's Scramble",
+    name: "Eggs Benedict",
     altText:
-      "Italian sausage scramble with spinach, mushrooms, and parmesan at Luigi's American Breakfast, Redmond WA",
+      "Eggs benedict with hollandaise, hash browns, and breakfast sides at Luigi's American Breakfast, Redmond WA",
     blurb:
-      "Sweet Italian sausage, spinach, onions, mushrooms & parmesan. The Luigi family lineage on a plate.",
-    image: images.heroSpread,
+      "Two soft-poached eggs on an English muffin with hollandaise and your choice of breakfast side.",
+    image: images.benedict,
     tilt: "tilt-l" as const,
-    href: "/menu#scrambles",
-    badge: "From the family",
+    href: "/menu#benedicts",
+    badge: "Brunch classic",
   },
 ];

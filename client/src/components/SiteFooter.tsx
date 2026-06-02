@@ -29,8 +29,8 @@ export default function SiteFooter() {
               </p>
               <p className="mt-4 text-[15px] text-cream/70 max-w-md leading-relaxed">
                 A family-run breakfast & lunch spot tucked into the Redmond
-                Ridge plaza. Stop in for Swedish pancakes, an Italian sausage
-                scramble, or a steak and eggs. Save room for a cinnamon roll.
+                Ridge plaza. Stop in for Swedish pancakes, eggs benedict, a
+                breakfast burrito, or steak and eggs. Save room for a cinnamon roll.
               </p>
             </div>
 

@@ -18,7 +18,7 @@ export default function About() {
     <SiteLayout>
       <SEO
         title="Our Family Story | Luigi's Breakfast Restaurant — Redmond, WA"
-        description="The family behind Luigi's American Breakfast in Redmond Ridge, WA. House-made favorites with Italian roots. Open daily 8 AM–3 PM — walk in any morning."
+        description="The family behind Luigi's American Breakfast in Redmond Ridge, WA. House-made breakfast and lunch favorites. Open daily 8 AM–3 PM — walk in any morning."
         path="/about"
         includeRestaurantSchema
         breadcrumbs={[{ name: "Our Story", path: "/about" }]}
@@ -43,9 +43,9 @@ export default function About() {
                 Luigi's American Breakfast
               </Link>{" "}
               is a small, family-run breakfast restaurant in Redmond Ridge. The
-              Italian sausage scramble comes from a grandmother who didn't
-              measure anything. The Swedish pancakes come from a friend's recipe
-              we promised we'd never change. Everything else comes from showing
+              Swedish pancakes come from a treasured recipe we promised we'd
+              never change. The scrambles, benedicts, burritos, burgers, and
+              sandwiches come from showing
               up every morning at 6 AM and caring about how it tastes when it
               lands on your table.
             </p>

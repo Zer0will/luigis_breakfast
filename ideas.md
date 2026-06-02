@@ -8,7 +8,7 @@ The brand is a small, family-run, all-day breakfast & lunch joint at 23515 NE No
 <text>
 **Approach 1 — "The Sunday Paper Diner"**
 
-- **Design Movement:** Mid-century American diner editorial, inspired by 1950s Saturday Evening Post layouts and vintage Italian-American trattoria menus. Think Joe's Cafe meets a hand-set local newspaper.
+- **Design Movement:** Mid-century American diner editorial, inspired by 1950s Saturday Evening Post layouts and neighborhood breakfast-house menus. Think Joe's Cafe meets a hand-set local newspaper.
 - **Core Principles:** Warm and analog (no glassmorphism), generous editorial typography, hand-drawn ornaments, food photography as the hero.
 - **Color Philosophy:** Cream paper background (#FBF5EA), brand peach (#E8A776) as a warm accent, deep brick red (#A02A1F from the logo) for headlines, charcoal ink (#2A2520) for body. Evokes a well-loved, slightly worn paper menu kept in a leather binder.
 - **Layout Paradigm:** Editorial newspaper grid — asymmetric three-column with "The Daily Special" boxed callouts, hand-stamped section dividers, and pull-quotes from real Yelp reviews ("the breakfast burrito SLAPS").
@@ -24,9 +24,9 @@ The brand is a small, family-run, all-day breakfast & lunch joint at 23515 NE No
 <text>
 **Approach 2 — "Trattoria Modernismo"**
 
-- **Design Movement:** Contemporary Italian-American restaurant branding (think Carbone, Don Angie, Via Carota web identities). Polished, confident, slightly nostalgic but unmistakably current.
+- **Design Movement:** Contemporary breakfast-restaurant branding with a polished neighborhood feel. Warm, confident, slightly nostalgic but unmistakably current.
 - **Core Principles:** Bold serif voice, terracotta and olive palette, generous whitespace, food shot at restaurant-grade quality, clear hierarchy.
-- **Color Philosophy:** Warm off-white (#F7F1E8), terracotta peach (#E08856 — pulled from logo), deep wine red (#7C1F1A), olive green (#5C6B3D) accent, espresso (#1F1611) text. Confident Italian-American without being cliché checkered-tablecloth.
+- **Color Philosophy:** Warm off-white (#F7F1E8), terracotta peach (#E08856 — pulled from logo), deep wine red (#7C1F1A), olive green (#5C6B3D) accent, espresso (#1F1611) text. Confident neighborhood breakfast warmth without cuisine clichés.
 - **Layout Paradigm:** Magazine-grade asymmetric grid. Hero image full-bleed with a serif title locked to the left third. Menu page reads like a wine list — two columns, dot-leader pricing, generous line height.
 - **Signature Elements:** (1) The chef-hat "L" as a recurring monogram watermark, (2) a thin wheat-sheaf rule between sections, (3) "Famiglia Luigi" tag stamps on family-story moments.
 - **Interaction Philosophy:** Quietly confident. Buttons fill from left to right with brand red. Images zoom 1.05× on hover with a soft warm-light overlay.
@@ -56,7 +56,7 @@ The brand is a small, family-run, all-day breakfast & lunch joint at 23515 NE No
 
 ## Selected Direction
 
-I'm choosing **Approach 3 — "Saturday Morning Plaza"** because the explicit goal is to **land regulars**. That means the website's first job is utility (hours, location, phone, "what's good") for a mixed-age neighborhood audience, with brand warmth as a close second. Approach 3 is mobile-first by default (most of Luigi's discovery traffic will come from phones searching "breakfast near me" in Redmond Ridge), keeps the warm Italian-American family feeling without leaning into cliché, and uses photo-led layout so the food itself does the heavy lifting once we have real photography in. The chef-hat logo's peach-and-red palette is preserved as the brand spine; nothing fights the existing logo.
+I'm choosing **Approach 3 — "Saturday Morning Plaza"** because the explicit goal is to **land regulars**. That means the website's first job is utility (hours, location, phone, "what's good") for a mixed-age neighborhood audience, with brand warmth as a close second. Approach 3 is mobile-first by default (most of Luigi's discovery traffic will come from phones searching "breakfast near me" in Redmond Ridge), keeps the warm family-run breakfast feeling without mispositioning the restaurant as another cuisine, and uses photo-led layout so the food itself does the heavy lifting once we have real photography in. The chef-hat logo's peach-and-red palette is preserved as the brand spine; nothing fights the existing logo.
 
 **Operating rules I'm committing to throughout the build:**
 - Cream background, brand peach + tomato red, charcoal text. No purple gradients, no Inter-only typography, no centered hero with a single CTA in the middle.

@@ -20,7 +20,7 @@ export default function Home() {
     <SiteLayout>
       <SEO
         title="Breakfast Restaurant in Redmond, WA | Luigi's"
-        description="Family-run breakfast restaurant in Redmond Ridge, WA. House-made Swedish pancakes, Italian scrambles & eggs benedict. Walk in daily, 8 AM–3 PM."
+        description="Family-run breakfast restaurant in Redmond Ridge, WA. House-made Swedish pancakes, eggs benedict, breakfast burritos, burgers, and sandwiches. Walk in daily, 8 AM–3 PM."
         path="/"
         includeRestaurantSchema
       />
@@ -41,9 +41,9 @@ export default function Home() {
 
               <p className="mt-5 text-[17px] sm:text-[19px] text-charcoal/80 leading-relaxed max-w-xl">
                 Luigi's is a family-run breakfast restaurant in Redmond Ridge,
-                WA — serving scratch-made Swedish pancakes, Italian sausage
-                scrambles, eggs benedict, and steak-and-eggs the way a Saturday
-                morning should taste. Walk in any day between 8 and 3, and
+                WA — serving scratch-made Swedish pancakes, eggs benedict,
+                breakfast burritos, burgers, sandwiches, and steak-and-eggs the
+                way a Saturday morning should taste. Walk in any day between 8 and 3, and
                 we'll have the coffee on.
               </p>
 
@@ -230,14 +230,14 @@ export default function Home() {
             <div className="lg:col-span-7 order-1 lg:order-2">
               <div className="font-hand text-3xl text-brick">Our story</div>
               <h2 className="mt-1 font-display text-[34px] sm:text-[46px] font-semibold text-ink leading-tight">
-                A Family Breakfast Restaurant With Italian Roots
+                A Family Breakfast Restaurant for Redmond Ridge
               </h2>
               <p className="mt-5 text-[17px] text-charcoal/80 leading-relaxed">
                 Luigi's is a family-friendly breakfast operation in Redmond
                 Ridge, and the menu reads like a family table: Swedish pancakes
-                from a treasured recipe, Italian sausage scrambled with spinach
-                and parmesan, fresh corned beef hash made in-house every week,
-                and steak from our own butcher shop. We opened here to be the
+                from a treasured recipe, hearty scrambles, eggs benedict,
+                fresh corned beef hash made in-house every week, and steak from
+                our own butcher shop. We opened here to be the
                 place you bring your parents on Saturday and your kids on
                 Sunday.
               </p>
