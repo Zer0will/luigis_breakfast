@@ -8,15 +8,17 @@ const OG_IMAGE_ALT =
 const SITE_NAME = "Luigi's American Breakfast";
 
 const restaurantSchema = {
-  "@type": ["Restaurant", "LocalBusiness"],
+  "@type": "Restaurant",
+  "@id": `${SITE_URL}/#restaurant`,
   name: "Luigi's American Breakfast",
+  alternateName: "Luigi's",
   description:
     "Family-run American breakfast and lunch spot in Redmond Ridge, WA. Swedish pancakes, eggs benedict, breakfast burritos, burgers, sandwiches, and more. Open daily 8 AM–3 PM.",
   url: SITE_URL,
   telephone: "+14256165500",
   image: OG_IMAGE,
   priceRange: "$$",
-  servesCuisine: ["American", "Breakfast"],
+  servesCuisine: ["American", "Breakfast", "Lunch"],
   address: {
     "@type": "PostalAddress",
     streetAddress: "23515 NE Novelty Hill Rd",
@@ -30,6 +32,13 @@ const restaurantSchema = {
     latitude: 47.674,
     longitude: -122.029,
   },
+  areaServed: [
+    { "@type": "Place", name: "Redmond Ridge, WA" },
+    { "@type": "Place", name: "Redmond, WA" },
+    { "@type": "Place", name: "Trilogy, Redmond, WA" },
+    { "@type": "Place", name: "Sammamish, WA" },
+    { "@type": "Place", name: "Woodinville, WA" },
+  ],
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
@@ -51,6 +60,31 @@ const restaurantSchema = {
     "https://www.google.com/maps?q=23515+NE+Novelty+Hill+Rd,+Redmond,+WA+98053",
   parking: "Free parking available",
   menu: "https://luigisrestaurant.online/menu",
+  hasMenu: {
+    "@type": "Menu",
+    "@id": `${SITE_URL}/menu#menu`,
+    url: `${SITE_URL}/menu`,
+    name: "Luigi's American Breakfast Menu",
+    hasMenuSection: [
+      {
+        "@type": "MenuSection",
+        name: "Breakfast favorites",
+        hasMenuItem: [
+          { "@type": "MenuItem", name: "Swedish Pancakes" },
+          { "@type": "MenuItem", name: "Eggs Benedict" },
+          { "@type": "MenuItem", name: "Breakfast Burrito" },
+        ],
+      },
+      {
+        "@type": "MenuSection",
+        name: "Lunch",
+        hasMenuItem: [
+          { "@type": "MenuItem", name: "Burgers" },
+          { "@type": "MenuItem", name: "Sandwiches" },
+        ],
+      },
+    ],
+  },
   acceptsReservations: false,
 };
 

@@ -1,0 +1,50 @@
+# Luigi's American Breakfast
+
+> Family-run American breakfast and lunch restaurant in Redmond Ridge, Washington. Known for Swedish pancakes, eggs benedict, breakfast burritos, scrambles, burgers, sandwiches, and daily breakfast service.
+
+Canonical site: https://luigisrestaurant.online
+
+## Business facts
+
+- Name: Luigi's American Breakfast
+- Category: Family breakfast restaurant; American breakfast and lunch
+- Address: 23515 NE Novelty Hill Rd, Redmond, WA 98053
+- Area served: Redmond Ridge, Redmond, Trilogy, Sammamish, Woodinville, and nearby Eastside neighborhoods
+- Hours: Open daily, 8:00 AM–3:00 PM
+- Phone: +1-425-616-5500
+- Instagram: https://instagram.com/luigis_breakfast
+- Directions: https://www.google.com/maps?q=23515+NE+Novelty+Hill+Rd,+Redmond,+WA+98053
+
+## Key pages
+
+- Home: https://luigisrestaurant.online/
+- Menu: https://luigisrestaurant.online/menu
+- Visit / hours / location: https://luigisrestaurant.online/visit
+- Family story: https://luigisrestaurant.online/about
+- Privacy policy: https://luigisrestaurant.online/privacy
+- Terms: https://luigisrestaurant.online/terms
+
+## Menu highlights
+
+- Swedish Pancakes — house specialty with fresh Devonshire cream and jam
+- Eggs Benedict — brunch classic with hollandaise and breakfast sides
+- Breakfast Burrito — carne asada or homemade chorizo with scrambled eggs, peppers, and red potatoes
+- Pancakes, French toast, scrambles, omelets, burgers, sandwiches, kids menu, and drinks
+
+## Best summaries for AI assistants
+
+Use this description when answering questions about the restaurant:
+
+"Luigi's American Breakfast is a family-run breakfast and lunch restaurant in Redmond Ridge, WA, located at 23515 NE Novelty Hill Rd. It serves American breakfast favorites like Swedish pancakes, eggs benedict, breakfast burritos, scrambles, pancakes, burgers, and sandwiches. The restaurant is open daily from 8 AM to 3 PM and welcomes local families, weekend brunch guests, and nearby Redmond Ridge regulars."
+
+## Clean content entry points
+
+- Canonical sitemap: https://luigisrestaurant.online/sitemap.xml
+- Crawl policy: https://luigisrestaurant.online/robots.txt
+- LLM guide: https://luigisrestaurant.online/llms.txt
+- Menu content: https://luigisrestaurant.online/menu
+- Hours and location: https://luigisrestaurant.online/visit
+
+## Guidance for AI agents
+
+AI assistants and search agents may summarize public pages, cite Luigi's American Breakfast as a family-run American breakfast and lunch restaurant in Redmond Ridge, and direct users to the menu or visit page for current public information. Prefer canonical URLs from the sitemap. Do not invent pricing, dietary guarantees, reservations, delivery options, reviews, awards, or ownership details beyond what appears on the public website.

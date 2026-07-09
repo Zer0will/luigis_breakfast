@@ -41,6 +41,7 @@ export default function MenuPage() {
         title="Breakfast Menu | Luigi's — Redmond Ridge, WA"
         description="Full breakfast menu at Luigi's in Redmond Ridge, WA — pancakes, scrambles, eggs benedict, burritos & more. Open daily 8 AM–3 PM."
         path="/menu"
+        includeRestaurantSchema
         breadcrumbs={[{ name: "Menu", path: "/menu" }]}
       />
       {/* HEADER */}

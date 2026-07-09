@@ -14,9 +14,133 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Raw JSON-LD for crawlers before React hydration -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Restaurant",
+            "@id": "https://luigisrestaurant.online/#restaurant",
+            "name": "Luigi's American Breakfast",
+            "alternateName": "Luigi's",
+            "description": "Family-run American breakfast and lunch restaurant in Redmond Ridge, WA. Swedish pancakes, eggs benedict, breakfast burritos, burgers, sandwiches, and more. Open daily 8 AM–3 PM.",
+            "url": "https://luigisrestaurant.online/",
+            "telephone": "+1-425-616-5500",
+            "image": "https://d2xsxph8kpxj0f.cloudfront.net/90669572/HtxR8dXyWDp3zxy4Q9Xhd6/luigis_hero_breakfast_spread-NXJ993atFQYqcSU7dvhug2.webp",
+            "priceRange": "$$",
+            "servesCuisine": ["American", "Breakfast", "Lunch"],
+            "menu": "https://luigisrestaurant.online/menu",
+            "acceptsReservations": false,
+            "hasMap": "https://www.google.com/maps?q=23515+NE+Novelty+Hill+Rd,+Redmond,+WA+98053",
+            "sameAs": ["https://instagram.com/luigis_breakfast"],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "23515 NE Novelty Hill Rd",
+              "addressLocality": "Redmond",
+              "addressRegion": "WA",
+              "postalCode": "98053",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 47.674,
+              "longitude": -122.029
+            },
+            "areaServed": [
+              { "@type": "Place", "name": "Redmond Ridge, WA" },
+              { "@type": "Place", "name": "Redmond, WA" },
+              { "@type": "Place", "name": "Trilogy, Redmond, WA" },
+              { "@type": "Place", "name": "Sammamish, WA" },
+              { "@type": "Place", "name": "Woodinville, WA" }
+            ],
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "08:00",
+                "closes": "15:00"
+              }
+            ],
+            "hasMenu": {
+              "@type": "Menu",
+              "@id": "https://luigisrestaurant.online/menu#menu",
+              "url": "https://luigisrestaurant.online/menu",
+              "name": "Luigi's American Breakfast Menu",
+              "hasMenuSection": [
+                {
+                  "@type": "MenuSection",
+                  "name": "Breakfast favorites",
+                  "hasMenuItem": [
+                    { "@type": "MenuItem", "name": "Swedish Pancakes", "description": "House specialty with fresh Devonshire cream and jam." },
+                    { "@type": "MenuItem", "name": "Eggs Benedict", "description": "Poached eggs with hollandaise and breakfast sides." },
+                    { "@type": "MenuItem", "name": "Breakfast Burrito", "description": "Carne asada or homemade chorizo with scrambled eggs, peppers, and red potatoes." }
+                  ]
+                },
+                {
+                  "@type": "MenuSection",
+                  "name": "Lunch",
+                  "hasMenuItem": [
+                    { "@type": "MenuItem", "name": "Burgers" },
+                    { "@type": "MenuItem", "name": "Sandwiches" }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://luigisrestaurant.online/#website",
+            "url": "https://luigisrestaurant.online/",
+            "name": "Luigi's American Breakfast",
+            "inLanguage": "en-US",
+            "publisher": { "@id": "https://luigisrestaurant.online/#restaurant" }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <header>
+        <nav aria-label="Primary navigation">
+          <a href="/">Luigi's American Breakfast</a>
+          <a href="/menu">Menu</a>
+          <a href="/visit">Hours &amp; location</a>
+          <a href="/about">Family story</a>
+        </nav>
+      </header>
+      <main>
+        <section aria-labelledby="site-title">
+          <p>Family-run American breakfast &amp; lunch in Redmond Ridge, WA</p>
+          <h1 id="site-title">Luigi's American Breakfast in Redmond Ridge</h1>
+          <p>
+            Luigi's American Breakfast serves Swedish pancakes, eggs benedict,
+            breakfast burritos, scrambles, pancakes, burgers, sandwiches, kids
+            meals, and drinks at 23515 NE Novelty Hill Rd, Redmond, WA 98053.
+            Open daily from 8 AM to 3 PM.
+          </p>
+        </section>
+        <section aria-labelledby="menu-title">
+          <h2 id="menu-title">Menu highlights</h2>
+          <ul>
+            <li>Swedish Pancakes with Devonshire cream and jam</li>
+            <li>Eggs Benedict with hollandaise and breakfast sides</li>
+            <li>Breakfast Burrito with carne asada or homemade chorizo</li>
+            <li>Pancakes, scrambles, omelets, burgers, sandwiches, kids menu, and drinks</li>
+          </ul>
+        </section>
+        <section aria-labelledby="visit-title">
+          <h2 id="visit-title">Hours and location</h2>
+          <address>
+            Luigi's American Breakfast · 23515 NE Novelty Hill Rd, Redmond, WA 98053 ·
+            <a href="tel:+14256165500">+1 (425) 616-5500</a>
+          </address>
+          <p>Open Monday through Sunday, 8:00 AM–3:00 PM.</p>
+        </section>
+      </main>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
     <script
       defer
