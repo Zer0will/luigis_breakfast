@@ -51,12 +51,12 @@ export default function MenuPage() {
             The menu
           </div>
           <h1 className="mt-1 font-display text-[42px] sm:text-[56px] font-semibold text-ink leading-tight">
-            Everything We Make — Breakfast &amp; Lunch in Redmond Ridge
+            Breakfast, lunch &amp; your favorites.
           </h1>
           <p className="mt-4 text-charcoal/75 text-[16px] sm:text-[17px] max-w-2xl leading-relaxed">
             Breakfast is served all day. Lunch starts at noon on weekends,
             anytime on weekdays. Tap a section, scan, and call ahead if you'd
-            like — we'll have it on the table.
+            like to check availability.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <a
@@ -87,9 +87,10 @@ export default function MenuPage() {
                 <button
                   key={g.id}
                   type="button"
+                  aria-pressed={active}
                   onClick={() => {
                     setActiveGroup(g.id);
-                    window.scrollTo({ top: 0, behavior: "smooth" });
+                    document.getElementById("menu-sections")?.scrollIntoView({ block: "start", behavior: "instant" });
                   }}
                   className={`shrink-0 px-5 py-2.5 rounded-full text-[14px] font-semibold transition-colors ${
                     active
@@ -106,7 +107,7 @@ export default function MenuPage() {
       </div>
 
       {/* SECTION NAV PILLS */}
-      <section className="container pt-8">
+      <section id="menu-sections" className="container pt-8 scroll-mt-40">
         <div className="flex flex-wrap gap-2">
           {group.sections.map(s => (
             <a
