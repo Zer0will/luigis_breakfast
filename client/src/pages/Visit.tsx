@@ -48,7 +48,7 @@ export default function Visit() {
               className="mt-4 inline-flex items-center gap-2 bg-brick text-cream px-6 py-3.5 rounded-full text-[15px] font-semibold hover:bg-tomato transition-colors"
             >
               <MapPin className="w-4 h-4" />
-              Open in Google Maps
+              Open directions
             </a>
           </div>
 
@@ -64,7 +64,7 @@ export default function Visit() {
             <Block icon={Clock} title="Hours">
               <ul className="space-y-1 text-[15px]">
                 {brand.hours.days.map(d => (
-                  <li key={d.day} className="flex justify-between">
+                  <li key={d.day} className="flex justify-between gap-4">
                     <span className="text-charcoal/70">{d.day}</span>
                     <span className="text-ink font-medium">{d.hours}</span>
                   </li>

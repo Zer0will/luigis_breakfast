@@ -29,6 +29,12 @@ export default function SiteHeader() {
     setOpen(false);
   }, [location]);
 
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent) => { if (event.key === "Escape") setOpen(false); };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, []);
+
   return (
     <header
       className={`sticky top-0 z-40 w-full transition-all duration-300 ${
@@ -60,6 +66,7 @@ export default function SiteHeader() {
               <Link
                 key={item.href}
                 href={item.href}
+                aria-current={active ? "page" : undefined}
                 className={`px-3 py-2 text-[15px] font-medium rounded-md transition-colors ${
                   active
                     ? "text-brick"
@@ -85,7 +92,9 @@ export default function SiteHeader() {
           </a>
           <button
             type="button"
-            aria-label="Open menu"
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+            aria-controls="mobile-navigation"
             className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full bg-cream-deep text-ink"
             onClick={() => setOpen((v) => !v)}
           >
@@ -96,7 +105,7 @@ export default function SiteHeader() {
 
       {/* Mobile drawer */}
       {open && (
-        <div className="md:hidden border-t border-cream-deep bg-cream/98 backdrop-blur-md">
+        <div id="mobile-navigation" className="md:hidden border-t border-cream-deep bg-cream/98 backdrop-blur-md">
           <nav className="container py-4 flex flex-col gap-1">
             {navItems.map((item) => {
               const active =
@@ -107,6 +116,7 @@ export default function SiteHeader() {
                 <Link
                   key={item.href}
                   href={item.href}
+                aria-current={active ? "page" : undefined}
                   className={`px-3 py-3 rounded-lg text-[17px] font-medium ${
                     active
                       ? "bg-peach-soft text-brick"

@@ -62,7 +62,7 @@ export default function About() {
                   From our kitchen
                 </div>
                 <div className="text-[12px] text-charcoal/65 mt-0.5">
-                  A Saturday morning, last week.
+                  From our kitchen.
                 </div>
               </div>
             </div>

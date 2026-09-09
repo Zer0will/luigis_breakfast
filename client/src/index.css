@@ -272,3 +272,8 @@
   .fade-up-d2 { animation-delay: 240ms; }
   .fade-up-d3 { animation-delay: 360ms; }
 }
+
+:focus-visible { outline: 3px solid #994331; outline-offset: 4px; }
+.skip-link { position: fixed; top: 8px; left: 8px; z-index: 100; background: #fff8ee; color: #532b20; padding: 12px 20px; transform: translateY(-150%); }
+.skip-link:focus { transform: translateY(0); }
+@media (max-width: 640px) { input, select, textarea { font-size: 16px !important; } }
