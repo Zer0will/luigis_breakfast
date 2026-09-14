@@ -48,16 +48,16 @@ export function getDirectionsUrl(): string {
     : brand.directionsUrl;
 }
 
-// Hero / food imagery (generated, persistent CDN URLs)
+// User-approved AI illustrative imagery, served from checked-in assets.
 export const images = {
   heroSpread:
-    "https://d2xsxph8kpxj0f.cloudfront.net/90669572/HtxR8dXyWDp3zxy4Q9Xhd6/luigis_hero_breakfast_spread-NXJ993atFQYqcSU7dvhug2.webp",
+    "/images/breakfast-spread.webp",
   burrito:
-    "https://d2xsxph8kpxj0f.cloudfront.net/90669572/HtxR8dXyWDp3zxy4Q9Xhd6/luigis_breakfast_burrito-UaX3cQBVKnsaqa8JPh8icG.webp",
-  frenchToast:
-    "https://d2xsxph8kpxj0f.cloudfront.net/90669572/HtxR8dXyWDp3zxy4Q9Xhd6/luigis_french_toast-5rrCiGe2eLBohAdoBUmWRq.webp",
+    "/images/breakfast-burrito.webp",
+  swedishPancakes:
+    "/images/swedish-pancakes.webp",
   benedict:
-    "https://d2xsxph8kpxj0f.cloudfront.net/90669572/HtxR8dXyWDp3zxy4Q9Xhd6/luigis_eggs_benedict-YrpXVv3tuBpziSknUmd6DP.webp",
+    "/images/eggs-benedict.webp",
 };
 
 // Curated "what people order" picks shown on the home page
@@ -65,10 +65,10 @@ export const signatureDishes = [
   {
     name: "Swedish Pancakes",
     altText:
-      "Swedish pancakes with fresh Devonshire cream and jam — house specialty at Luigi's American Breakfast, Redmond WA",
+      "Illustrative image of thin pancakes with cream and berry topping",
     blurb:
       "Our house specialty. A treasured family recipe with fresh Devonshire cream & jam.",
-    image: images.frenchToast,
+    image: images.swedishPancakes,
     tilt: "tilt-l" as const,
     href: "/menu#swedish",
     badge: "House specialty",
@@ -76,7 +76,7 @@ export const signatureDishes = [
   {
     name: "Breakfast Burrito",
     altText:
-      "Carne asada breakfast burrito with scrambled eggs, peppers, and red potatoes at Luigi's Redmond",
+      "Illustrative image of a breakfast burrito cut in half",
     blurb:
       "Carne asada or homemade chorizo, scrambled eggs, peppers, and red potatoes in a griddled flour tortilla.",
     image: images.burrito,
@@ -87,7 +87,7 @@ export const signatureDishes = [
   {
     name: "Eggs Benedict",
     altText:
-      "Eggs benedict with hollandaise, hash browns, and breakfast sides at Luigi's American Breakfast, Redmond WA",
+      "Illustrative image of eggs benedict with breakfast potatoes",
     blurb:
       "Two soft-poached eggs on an English muffin with hollandaise and your choice of breakfast side.",
     image: images.benedict,

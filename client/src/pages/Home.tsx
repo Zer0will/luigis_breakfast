@@ -94,7 +94,7 @@ export default function Home() {
                 <div className="absolute -inset-2 bg-cream-deep rounded-[24px] rotate-1 -z-10" />
                 <img
                   src={images.heroSpread}
-                  alt="Breakfast spread at Luigi's in Redmond Ridge, WA — pancakes, omelette, hash browns, and biscuits and gravy"
+                  alt="Illustrative breakfast spread with thin pancakes, eggs benedict, and burritos"
                   className="w-full h-[360px] sm:h-[460px] lg:h-[520px] object-cover rounded-[20px] shadow-xl"
                 />
 
@@ -200,6 +200,9 @@ export default function Home() {
             </Link>
           ))}
         </div>
+        <p className="mt-8 text-center text-[12px] text-charcoal/65">
+          Illustrative images, AI-generated; actual presentation may vary.
+        </p>
       </section>
 
       {/* SUNRISE DIVIDER */}
@@ -213,7 +216,7 @@ export default function Home() {
               <div className="relative">
                 <img
                   src={images.benedict}
-                  alt="Eggs benedict with hollandaise sauce at Luigi's family breakfast restaurant in Redmond Ridge, WA"
+                  alt="Illustrative image of eggs benedict with breakfast potatoes"
                   className="w-full h-[360px] sm:h-[440px] object-cover rounded-[20px] shadow-xl"
                 />
                 <div className="absolute -bottom-5 -right-5 bg-peach text-ink rounded-2xl px-5 py-3 shadow-lg max-w-[200px]">

@@ -2,9 +2,9 @@ import { Helmet } from "react-helmet-async";
 
 const SITE_URL = "https://luigisrestaurant.online";
 const OG_IMAGE =
-  "https://d2xsxph8kpxj0f.cloudfront.net/90669572/HtxR8dXyWDp3zxy4Q9Xhd6/luigis_hero_breakfast_spread-NXJ993atFQYqcSU7dvhug2.webp";
+  "https://luigisrestaurant.online/images/breakfast-spread.webp";
 const OG_IMAGE_ALT =
-  "A spread of pancakes, eggs benedict, hash browns, and breakfast favorites at Luigi's American Breakfast in Redmond, WA";
+  "AI-generated illustrative breakfast spread with pancakes, eggs benedict, and burritos";
 const SITE_NAME = "Luigi's American Breakfast";
 
 const restaurantSchema = {

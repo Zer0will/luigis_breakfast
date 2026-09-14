@@ -54,15 +54,15 @@ export default function About() {
             <div className="polaroid tilt-r rounded-md">
               <img
                 src={images.benedict}
-                alt="Eggs benedict with hollandaise sauce at Luigi's American Breakfast in Redmond Ridge, WA"
+                alt="Illustrative image of eggs benedict with breakfast potatoes"
                 className="w-full h-[280px] sm:h-[360px] object-cover rounded-[3px]"
               />
               <div className="pt-3 px-1">
                 <div className="font-hand text-2xl text-brick leading-tight">
-                  From our kitchen
+                  Breakfast inspiration
                 </div>
                 <div className="text-[12px] text-charcoal/65 mt-0.5">
-                  A Saturday morning, last week.
+                  AI-generated illustrative image; presentation may vary.
                 </div>
               </div>
             </div>
@@ -107,8 +107,8 @@ export default function About() {
         <div className="grid lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6">
             <img
-              src={images.frenchToast}
-              alt="French toast with fresh strawberries and Devonshire cream at Luigi's in Redmond, WA"
+              src={images.swedishPancakes}
+              alt="Illustrative image of thin pancakes with cream and berry topping"
               className="w-full h-[360px] sm:h-[460px] object-cover rounded-[20px] shadow-xl"
             />
           </div>
